@@ -5,7 +5,7 @@ pipeline
     {
         // Docker Hub credentials ID stored in Jenkins
         DOCKERHUB_CREDENTIALS ='dockerconnect'
-        IMAGE_NAME ='gigliomaniac1/Homework03'
+        IMAGE_NAME ='gigliomaniac1/homework03'
     }
 
     stages
