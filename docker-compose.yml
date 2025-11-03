@@ -1,9 +1,9 @@
 version: "3.8"
 services:
   Homework-03:
-    image: gigliomaniac1/Homework03:latest
+    image: gigliomaniac1/homework03:latest
     build: .
-    container_name: Homework03
+    container_name: homework03
     ports:
       - "80:3700"
     environment:
