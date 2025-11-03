@@ -5,7 +5,7 @@ services:
     build: .
     container_name: Homework03-1
     ports:
-      - "80:3000"
+      - "80:3700"
     environment:
       - PORT=3700
     volumes:
