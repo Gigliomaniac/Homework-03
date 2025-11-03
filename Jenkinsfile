@@ -19,6 +19,23 @@ pipeline
             }
         }
 
+// Scan the things
+        stage('SAST-TEST')
+        {
+            agent any
+            steps
+            {
+                script 
+                {
+                    snykSecurity(
+                        snykInstallation: 'Snyk-installations',
+                        snykTokenId: 'snyk-id',
+                        severity: 'critical'
+                    )
+                }
+            }
+        }
+
         
         stage('BUILD-and-TAG')
         {
